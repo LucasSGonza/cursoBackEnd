@@ -1,2 +1,2 @@
 # cursoBackEnd
-Repositório criado focando curso de aprendizagem industrial em Back-End
+Repositório criado focado para o curso de aprendizagem industrial em Back-End do SENAI-São José
