@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <div class="container-fluid">
+
+      <div class="row">
+
+        <div class="col-md-12">
+          <h1 class="text-center">Meus repositórios!</h1>
+        </div>
+
+      </div>
+
+      <div class="row" style="text-align: center; margin-top: 50px">
+
+        <div class="col-md-12">
+
+          <h2>Aprendizagem Industrial - Programador Back-End</h2>
+
+          <div class="row" style="margin-top: 50px">
+            <div class="col-md-4">
+              <h3>Versionamento:</h3>
+              <br/>
+              <button type="button" class="btn btn-success" onclick="versionamento()">Acessar</button>
+            </div>
+
+            <div class="col-md-4">
+              <h3>Lógica de Programação:</h3>
+              <br/>
+              <!-- 
+              <a href="https://github.com/LucasSGonza/cursoBackEnd/tree/main/LogicaDeProgramacao">
+                  <button type="button" class="btn btn-success">
+                    Acessar
+                </button>
+              </a>
+              -->
+              <button type="button" class="btn btn-success" onclick="logica()">Acessar</button>
+            </div>
+
+            <div class="col-md-4">
+              <h3>Metodologias Ágeis:</h3>
+              <br/>
+              <button type="button" class="btn btn-success" onclick="mAgeis()">Acessar</button>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </body>
+</html>
+
+<script>
+  function logica() {
+    window.location.href =
+      "https://github.com/LucasSGonza/cursoBackEnd/tree/main/LogicaDeProgramacao";
+  }
+  function versionamento() {
+    window.location.href =
+      "https://github.com/LucasSGonza/cursoBackEnd/tree/main/Versionamento/";
+  }
+  function mAgeis() {
+    window.location.href = "https://github.com/LucasSGonza/cursoBackEnd";
+  }
+</script>
