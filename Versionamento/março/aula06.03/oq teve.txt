@@ -1,2 +1,0 @@
-https://www.layoutit.com/build#   --> fazer paginas html automaticamente mais facil
-https://getbootstrap.com.br/docs/4.1/getting-started/introduction/
