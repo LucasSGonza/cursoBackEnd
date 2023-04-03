@@ -48,7 +48,7 @@ function buscarEndereco() {
         // 2º fazer a conexão com a API
 
         //var url = "https://cdn.apicep.com/file/apicep/" + cepAtualizado + ".json"
-        var url = `./${cepAtualizado}.json` // --> para pegar somente os arquivos .json na pasta
+        var url = `https://my-json-server.typicode.com/LucasSGonza/cursoBackEnd/db/cep/code.${cepAtualizado}` // --> para pegar somente os arquivos .json na pasta
 
         // Exemplo: https://cdn.apicep.com/file/apicep/88137-390.json
 
