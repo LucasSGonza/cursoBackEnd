@@ -1,7 +1,7 @@
 {
     "cep": [
         {
-            "88137-390": {
+            "88131-400": {
                 "code": "88131-400",
                 "state": "SC",
                 "city": "Palhoça",
@@ -13,34 +13,40 @@
             }
         },
         {
-            "code": "88132-599",
-            "state": "SC",
-            "city": "Palhoça",
-            "district": "Bela Vista",
-            "address": "Avenida Paulo Roberto Vidal",
-            "status": 200,
-            "ok": true,
-            "statusText": "ok"
+            "88132-599": {
+                "code": "88132-599",
+                "state": "SC",
+                "city": "Palhoça",
+                "district": "Bela Vista",
+                "address": "Avenida Paulo Roberto Vidal",
+                "status": 200,
+                "ok": true,
+                "statusText": "ok"
+            }
         },
         {
-            "code": "88135-401",
-            "state": "SC",
-            "city": "Palhoça",
-            "district": "Alto Aririú",
-            "address": "Avenida São Cristóvão - de 3201/3202 ao fim",
-            "status": 200,
-            "ok": true,
-            "statusText": "ok"
+            "88135-401": {
+                "code": "88135-401",
+                "state": "SC",
+                "city": "Palhoça",
+                "district": "Alto Aririú",
+                "address": "Avenida São Cristóvão - de 3201/3202 ao fim",
+                "status": 200,
+                "ok": true,
+                "statusText": "ok"
+            }
         },
         {
-            "code": "88137-390",
-            "state": "SC",
-            "city": "Palhoça",
-            "district": "Pedra Branca",
-            "address": "Rua das Orquídeas",
-            "status": 200,
-            "ok": true,
-            "statusText": "ok"
+            "88137-390": {
+                "code": "88137-390",
+                "state": "SC",
+                "city": "Palhoça",
+                "district": "Pedra Branca",
+                "address": "Rua das Orquídeas",
+                "status": 200,
+                "ok": true,
+                "statusText": "ok"
+            }
         }
     ]
 }
