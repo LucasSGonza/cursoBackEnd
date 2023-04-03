@@ -1,14 +1,16 @@
 {
     "cep": [
         {
-            "code": "88131-400",
-            "state": "SC",
-            "city": "Palhoça",
-            "district": "Centro",
-            "address": "Rua Jacob Weingartner",
-            "status": 200,
-            "ok": true,
-            "statusText": "ok"
+            "88137-390": {
+                "code": "88131-400",
+                "state": "SC",
+                "city": "Palhoça",
+                "district": "Centro",
+                "address": "Rua Jacob Weingartner",
+                "status": 200,
+                "ok": true,
+                "statusText": "ok"
+            }
         },
         {
             "code": "88132-599",
