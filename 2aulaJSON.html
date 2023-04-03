@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="cssOK.css" media="screen"/>
+    <script src="scriptOK.js"></script>
+    <title>API 2 para Endereço!</title>
+</head>
+
+<body>
+    <!-- <label for="cep">Digite o CEP:</label> -->
+    <div style="text-align: center;">
+        <h1>Aula de JSON 2</h1>
+        <input type="text" id="cep" placeholder="Digite o CEP" maxlength="9"> <!-- onblur="buscarEndereco()" -->
+        <br><br>
+        <input type="text" id="logradouro" placeholder="Logradouro">
+        <br><br>
+        <input type="text" id="bairro" placeholder="Bairro">
+        <br><br>
+        <input type="text" id="cidade" placeholder="Cidade">
+        <br><br>
+        <input type="text" id="estado" placeholder="Estado">
+        <br><br>
+        <input type="text" id="pais" placeholder="País">
+        <br><br>
+        <button onclick="buscarEndereco()">Buscar CEP</button>
+        <button onclick="limpaCampos()">Limpar</button>
+    </div </body>
+
+</html>
