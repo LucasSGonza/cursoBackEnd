@@ -1,0 +1,52 @@
+body {
+    /*tirar barra de rolagem*/
+    overflow: hidden;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-large;
+
+    background-image: url(orla.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+
+    width: 100vw;
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+
+    text-align: center;
+
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+}
+
+
+label {
+    margin-top: 40px;
+}
+
+
+input {
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: none;
+
+    width: 300px;
+    height: 30px;
+    margin-top: 15px;
+    font-size: x-large;
+    text-align: center;
+}
+
+
+button {
+    width: 100px;
+    height: 40px;
+    background-color: aqua;
+    border-style: none;
+    border-radius: 10px;
+}

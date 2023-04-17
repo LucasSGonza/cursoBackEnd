@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API para Endereço!</title>
+</head>
+
+<body>
+    <!-- <label for="cep">Digite o CEP:</label> -->
+    <div style="text-align: center;">
+        <h1>Aula de JSON</h1>
+        <input type="text" id="cep" placeholder="Digite o CEP" maxlength="9"> <!-- onblur="buscarEndereco()" -->
+        <br><br>
+        <input type="text" id="logradouro" placeholder="Logradouro">
+        <br><br>
+        <input type="text" id="bairro" placeholder="Bairro">
+        <br><br>
+        <input type="text" id="cidade" placeholder="Cidade">
+        <br><br>
+        <input type="text" id="estado" placeholder="Estado">
+        <br><br>
+        <input type="text" id="pais" placeholder="País">
+        <br><br>
+        <button onclick="buscarEndereco()">Buscar CEP</button>
+        <button onclick="limpaCampos()">Limpar</button>
+    </div </body>
+
+</html>
+
+<script>
+    //https://viacep.com.br/exemplo/javascript/
+    //https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest
+
+    var cep, logradouro, bairro, cidade, estado, pais
+
+    function limpaCampos() {
+        cep = document.getElementById("cep").value = '';
+        logradouro = document.getElementById("logradouro").value = '';
+        bairro = document.getElementById("bairro").value = '';
+        cidade = document.getElementById("cidade").value = '';
+        estado = document.getElementById("estado").value = '';
+        pais = document.getElementById("pais").value = '';
+    }
+
+    function defineCampos() {
+        cep = document.getElementById("cep");
+        logradouro = document.getElementById("logradouro");
+        bairro = document.getElementById("bairro");
+        cidade = document.getElementById("cidade");
+        estado = document.getElementById("estado");
+        pais = document.getElementById("pais");
+    }
+
+    function buscarEndereco() {
+        var resposta;
+        //var validacep = /^[0-9]{8}$/; //Expressão regular para validar o CEP.
+
+        // 1º puxar oq foi digitado pelo usuário
+        defineCampos();
+
+
+        if (cep.value == "") { //Verifica se o cep está vazio
+            limpaCampos();
+            alert("CEP NÃO PODE ESTAR VAZIO!");
+        } else if (isNaN(cep.value)) { //Verifica se o cep so tem números
+            limpaCampos();
+            alert("Por gentileza informar somente números no CEP!");
+        } else { //if (validacep.test(parseInt(cep)) ) // .test => Tests for a match in a string. Returns true or false
+            // 2º fazer a conexão com a API
+            var url = "https://viacep.com.br/ws/" + cep.value + "/json"; //cria a "ponte" entre as páginas (a minha e a que acha o CEP)
+            // Exemplo: https://viacep.com.br/ws/88137390/json
+
+            var ponte = new XMLHttpRequest(); //cria a "ponte" para o json transitar
+
+            let a = ponte.open("GET", url); //abre a conexão entre as páginas para pegar a info desejada
+
+            if (a == undefined) {
+                alert("ERRO!\nVerifique o CEP digitado e tente novamente!");
+            } else {
+
+                ponte.onload = () => {
+
+                    resposta = JSON.parse(ponte.responseText);
+
+                    //console.log(resposta);
+
+                    // Define os valores dos input no HTML a partir da pesquisa pelo CEP
+                    bairro.value = resposta.bairro;
+                    logradouro.value = resposta.logradouro; //.logradouro pq o VIACEP define esse campo (atributo) com esse nome
+                    cidade.value = resposta.localidade; //.localidade pq ...
+                    estado.value = resposta.uf;
+                    pais.value = "BR"; //no ViaCEP não tem país
+
+                }
+                ponte.send();
+
+                //console.log(resposta);
+            }
+        }
+
+    }
+
+</script>
