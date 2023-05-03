@@ -1,4 +1,3 @@
-console.log("Sou gay kkkkk");
 
 function getProfile() {
     //event.preventDefault();
