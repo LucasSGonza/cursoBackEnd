@@ -1,0 +1,2 @@
+# ignorar a pasta node_modules -> basta dar um npm install local para conseguir utilizar a API corretamente
+/node_modules
