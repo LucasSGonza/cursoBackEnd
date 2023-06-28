@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../cssOK.css" media="screen" />
+    <script src="myJsonServer.js"></script>
+    <title>API 2 para Endereço!</title>
+</head>
+
+<body>
+    <!-- <label for="cep">Digite o CEP:</label> -->
+    <div id="div-principal">
+        <h1>Aula de JSON 2</h1>
+        <label><b>Digite seu Nome:</b><br>
+            <input type="text" id="nome">
+        </label>
+
+        <br><br>
+
+        <label><b>Digite seu CEP:</b><br>
+            <input type="text" id="cep" length="9"> <!-- onblur="buscarEndereco()"> -->
+        </label>
+
+        <br><br>
+
+        <label><b>Digite o logradouro:</b> <br>
+            <input type="text" id="logradouro">
+        </label>
+
+        <br><br>
+
+        <label><b>Digite o bairro:</b> <br>
+            <input type="text" id="bairro">
+        </label>
+
+        <br><br>
+
+        <label><b>Digite a cidade:</b> <br>
+            <input type="text" id="cidade"><br>
+        </label>
+
+        <br><br>
+        
+        <label><b>Digite o estado:</b> <br>
+            <input type="text" id="estado"><br>
+        </label>
+        
+        <br><br>
+
+        <label><b>Digite o país:</b> <br>
+            <input type="text" id="pais"><br>
+        </label>
+        
+        <br><br>
+
+        <button onclick="buscarEndereco()"><b>Buscar CEP</b></button>
+        <button onclick="limpaCampos()"><b>Limpar</b></button>
+        <button onclick="cadastrarPessoa()"><b>Cadastrar</b></button>
+    </div </body>
+
+</html>
